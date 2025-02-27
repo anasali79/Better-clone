@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.footer-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  
